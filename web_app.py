@@ -49,10 +49,10 @@ if uploaded_background is not None:
             out.close()
 
             if(video_resolution_scale=='1'):
-                command =  "python . temp.mp4 -o output.mp4 -b temp_background.jpg -z model"
+                command =  "python . temp.mp4 -o output.mp4 -b temp_background.jpg -z model -p 300 0.5"
                 process = os.system(command)
             else:
-                command =  "python . temp.mp4 -o output.mp4 -b temp_background.jpg -z model -s " +video_resolution_scale+ ""
+                command =  "python . temp.mp4 -o output.mp4 -b temp_background.jpg -z model -s " +video_resolution_scale+ " -p 300 0.5"
                 process = os.system(command)
 
             command = "python adding_audio.py temp.mp4 output.mp4 final.mp4"
