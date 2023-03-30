@@ -14,6 +14,8 @@ Please download the following models in order for the code to work:
 * [RVM](https://github.com/PeterL1n/RobustVideoMatting/releases/download/v1.0.0/rvm_resnet50.pth) 
 * [RainNet](https://drive.google.com/drive/folders/1NMvHbnD1kW-j1KKMxEb9R9IR5drMK3GQ?usp=sharing). Download "net_G_last.pth".
 
+After downloading them, add the models in the same directory as "main.py".
+
 ## How To Run:
 
 * Through a web app (Recommended but requires Streamlit):
